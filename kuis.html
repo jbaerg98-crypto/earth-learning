@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis - EARTH LEARNING</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">🌍 EARTH LEARNING</a>
+    <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="simulasi.html">Simulasi</a>
+        <a href="kuis.html" class="active">Kuis</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <h1>Kuis Pembelajaran</h1>
+    <p>Uji pemahamanmu tentang pemanasan global.</p>
+</header>
+
+<main class="content">
+
+    <div class="quiz-box">
+        <h2 id="question">Pertanyaan akan muncul di sini.</h2>
+
+        <div id="options"></div>
+
+        <p id="feedback"></p>
+
+        <p id="progress"></p>
+
+        <button id="nextButton" onclick="nextQuestion()"
+            style="display:none">
+            Pertanyaan Berikutnya →
+        </button>
+
+        <div id="finalResult"></div>
+
+        <button id="restartButton"
+            onclick="startQuiz()"
+            style="display:none">
+            Ulangi Kuis
+        </button>
+    </div>
+
+</main>
+
+<footer>
+    EARTH LEARNING | Media Pembelajaran Fisika
+</footer>
+
+</body>
+</html>

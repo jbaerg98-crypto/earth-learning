@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi - EARTH LEARNING</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">🌍 EARTH LEARNING</a>
+    <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="simulasi.html" class="active">Simulasi</a>
+        <a href="kuis.html">Kuis</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <h1>Simulasi Efek Rumah Kaca</h1>
+    <p>Amati pengaruh peningkatan gas rumah kaca.</p>
+</header>
+
+<main class="content">
+
+    <h2>Eksperimen Virtual</h2>
+    <p>
+        Geser pengaturan di bawah untuk mengubah
+        tingkat gas rumah kaca dalam ilustrasi.
+    </p>
+
+    <div class="sim-box">
+
+        <div id="atmosphere" style="
+            background:linear-gradient(#b6d9ed,#e6f4ee);
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+        ">
+            <div style="font-size:35px">☀️</div>
+            <p>↓ Radiasi matahari</p>
+            <div id="gas" style="font-size:18px">
+                ☁️ ☁️
+            </div>
+            <p>↑ Radiasi inframerah</p>
+            <div style="font-size:65px">🌍</div>
+            <h3>Permukaan Bumi</h3>
+        </div>
+
+        <h3 style="margin-top:20px">
+            Tingkat Gas Rumah Kaca
+        </h3>
+
+        <input
+            type="range"
+            id="gasLevel"
+            min="1"
+            max="100"
+            value="30"
+        >
+
+        <h3 id="levelText">30%</h3>
+
+        <p id="resultText">
+            Konsentrasi gas rumah kaca relatif rendah.
+        </p>
+
+        <div class="info-box">
+            <b>Perhatikan!</b>
+            <p id="explanation">
+                Sebagian radiasi inframerah diserap dan
+                dipancarkan kembali oleh gas rumah kaca.
+            </p>
+        </div>
+
+        <button onclick="resetSimulation()">
+            Ulangi Simulasi
+        </button>
+
+    </div>
+
+    <h2>Pertanyaan Pengamatan</h2>
+    <p>
+        Apa yang terjadi ketika konsentrasi gas rumah kaca
+        meningkat?
+    </p>
+    <p>
+        Coba geser pengaturan dari nilai rendah ke nilai tinggi
+        dan amati perbedaannya.
+    </p>
+
+    <a href="kuis.html" class="btn">Lanjut ke Kuis →</a>
+
+</main>
+
+<footer>
+    EARTH LEARNING | Media Pembelajaran Fisika
+</footer>
+
+</body>
+</html>
